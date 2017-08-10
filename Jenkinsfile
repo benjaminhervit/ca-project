@@ -6,6 +6,6 @@ node {
 		sh 'docker build -t benjamin/codechan .'
 	}
 	stage('run test'){
-		sh 'docker run tests.py'
+		sh 'python testes.py'
 	}
 }
