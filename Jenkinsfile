@@ -5,7 +5,7 @@ node {
 	stage('build docker'){
 		sh 'docker build -t benjamin/codechan .'
 	}
-	stage('run docker'){
-		sh 'docker run -p 8888:5000 --name benjamin/codechan benjamin/codechan'
+	stage('run test'){
+		sh 'docker run tests.py'
 	}
 }
